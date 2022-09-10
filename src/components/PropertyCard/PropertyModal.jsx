@@ -60,11 +60,10 @@ const PropertyModal = ({ close, open, product }) => {
               <div class="flex items-center mt-2.5 mb-5">Rating: {list}</div>
             </span>
             <span className="text-md font-semibold  mb-2">
-              Count: {product.rating && product.rating.count}
+              Rooms: {product.rooms}
             </span>
             <span className="block text-xl mb-2">Description </span>
-            <span className="text-xs pb-2">{product.description}</span>
-            {/* <button onClick={close}>Close Modal</button> */}
+            <span className="text-xs pb-2">{`Floor space of ${product.floorSpace} with below mentioned ameneties...`}</span>
           </div>
         </div>
       </div>
